@@ -12,7 +12,7 @@ const App: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
 
 
-  const addTodo = (text: string) => {
+  const addTodo = (text:string) => {
     const newTodo: Todo = {
       id: Date.now(),
       text,
