@@ -88,7 +88,7 @@ const Home:React.FC = () => {
           </tr>
           <tr>
             <td className="w-1/2 pr-4">
-              <Link href="/factorial">
+              <Link href="/loader">
                <b>HOC</b>
               </Link>
             </td>
