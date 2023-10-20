@@ -28,7 +28,7 @@ const Home:React.FC = () => {
             </td>
             <td> : </td>
             <td className="w-1/2 pl-4">
-              <p> This is an example for state.</p>
+              <p> This is an example for state and useCallback hook.</p>
             </td>
           </tr>
           <tr>
@@ -73,6 +73,28 @@ const Home:React.FC = () => {
             <td> : </td>
             <td className="w-1/2 pl-4">
               <p> This is an example for state management throught React Context.Used useState,useContext,useEffect and custom hooks</p>
+            </td>
+          </tr>
+          <tr>
+            <td className="w-1/2 pr-4">
+              <Link href="/factorial">
+               <b>useMemo</b>
+              </Link>
+            </td>
+            <td> : </td>
+            <td className="w-1/2 pl-4">
+              <p> This is an example for useMemo where i have used useMemo and useState hook </p>
+            </td>
+          </tr>
+          <tr>
+            <td className="w-1/2 pr-4">
+              <Link href="/factorial">
+               <b>HOC</b>
+              </Link>
+            </td>
+            <td> : </td>
+            <td className="w-1/2 pl-4">
+              <p> This is an example for HOC where i have used HOC concept and some hooks like useState,useEffect</p>
             </td>
           </tr>
         </tbody>
