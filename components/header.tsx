@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header:React.FC = () => {
+function Header(){
   return (
     <header>
       This is the header

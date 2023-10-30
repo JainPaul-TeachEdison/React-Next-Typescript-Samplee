@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const OnChangeState: React.FC = () => {
+function OnChangeState(){
   const [text, setText] = useState("");
 
   return (

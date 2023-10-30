@@ -2,11 +2,14 @@ import React, { useMemo, useState } from 'react'
 
 function Factorial() {
 
-    const [number, setNumber] = useState(5);
+    const [number, setNumber] = useState(2);
+    const [username,setUserName]=useState('');
 
     const factorial = useMemo(()=>calculateFactorial(number),[number]);
+    // const factorial=calculateFactorial(number)
 
     function calculateFactorial(num:number):number{
+      console.log("function used")
         if (num === 0) return 1;
         return num * calculateFactorial(num-1)
     }
@@ -21,10 +24,15 @@ function Factorial() {
           onChange={(e) => setNumber(Number(e.target.value))}
           className="border p-2 mb-4 rounded w-full"
         />
+        <input type="text"
+        name='username'
+        value={username}
+        onChange={(e)=>setUserName(e.target.value)} />
         <p>
           Factorial of {number} is{' '}
           <strong className="text-blue-600 text-2xl">{factorial}</strong>
         </p>
+        <p>Username is {username}</p>
       </div>
   )
 }

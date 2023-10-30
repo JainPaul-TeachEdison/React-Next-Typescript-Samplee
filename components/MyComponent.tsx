@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useMyContext } from "@/contexts/MyContext";
 
-const MyComponent: React.FC = () => {
+function MyComponent(){
   const { data, updateData } = useMyContext();
     const [input, setInput] = useState('')
 

@@ -2,7 +2,7 @@ import React from 'react'
 import HelloWorld from '@/components/HelloWorld'
 
 
-const FunctionalComponent:React.FC = () => {
+function FunctionalComponent(){
   return (
     <div>
       <h1>Functional Component example</h1>

@@ -1,7 +1,8 @@
 import { useCallback, useState } from "react"
 import ChildCounter from "@/components/ChildCounter";
+import Button from "@/components/Button";
 
-const Counter = () => {
+function Counter() {
 
     const [count, setCount] = useState(0)
 
@@ -19,8 +20,8 @@ const Counter = () => {
     <div>
         <h1>Counter</h1>
         <h3>Count:</h3>  <h2>{count}</h2>
-        <button onClick={increment}>Press here to increment (+)</button><br />
-        <button onClick={decrement}>Press here to decrement (-)</button>
+        <Button onClick={increment}>Press here to increment (+)</Button><br />
+        <Button onClick={decrement}>Press here to decrement (-)</Button>
         <ChildCounter increment={increment} decrement={decrement}/>
     </div>
   )

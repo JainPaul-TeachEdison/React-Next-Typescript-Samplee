@@ -7,12 +7,12 @@ interface Todo {
   completed: boolean;
 }
 
-const App: React.FC = () => {
+function App(){
 
   const [todos, setTodos] = useState<Todo[]>([]);
 
 
-  const addTodo = (text:string) => {
+  function addTodo(text:string){
     const newTodo: Todo = {
       id: Date.now(),
       text,
@@ -22,7 +22,7 @@ const App: React.FC = () => {
   };
 
 
-  const toggleTodo = (id: number) => {
+  function toggleTodo (id: number) {
     const updatedTodos = todos.map((todo) =>
       todo.id === id ? { ...todo, completed: !todo.completed } : todo
     );

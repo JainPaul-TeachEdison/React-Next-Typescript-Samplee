@@ -1,7 +1,7 @@
 import React from 'react'
 import Grandparent from '@/components/Grandparent'
 
-const PropsDrill:React.FC = () => {
+function PropsDrill(){
   return (
     <div>
       <h1>Props Drilling Example</h1>

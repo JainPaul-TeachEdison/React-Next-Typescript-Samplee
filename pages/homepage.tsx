@@ -1,16 +1,18 @@
-import React from "react";
-import Header from "@/components/header";
-import Body from "@/components/body";
-import Footer from "@/components/footer";
+import Button from "@/components/Button";
 
-const Homepage: React.FC = () => {
+
+function Homepage() {
+
+  function handleClick(){
+    alert('Button Clicked')
+  }
+
   return (
     <div>
-      <Header />
-      <Body />
-      <Footer />
+      <h1>Composition Example</h1>
+      <Button onClick={handleClick}>Click Here</Button>
     </div>
-  );
-};
+  )
+}
 
-export default Homepage;
+export default Homepage
