@@ -21,7 +21,7 @@ function Todos() {
       }
     };
 
-    fetchData();
+    setTimeout(fetchData, 3000);
   }, []);
 
   return (

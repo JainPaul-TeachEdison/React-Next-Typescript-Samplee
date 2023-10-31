@@ -97,6 +97,28 @@ const Home:React.FC = () => {
               <p> This is an example for HOC where i have used HOC concept and some hooks like useState,useEffect</p>
             </td>
           </tr>
+          <tr>
+            <td className="w-1/2 pr-4">
+              <Link href="/todos">
+               <b>Todo list without SSH</b>
+              </Link>
+            </td>
+            <td> : </td>
+            <td className="w-1/2 pl-4">
+              <p> This is to list todos without using SSH</p>
+            </td>
+          </tr>
+          <tr>
+            <td className="w-1/2 pr-4">
+              <Link href="/todos-ssh">
+               <b>Todo list with SSH</b>
+              </Link>
+            </td>
+            <td> : </td>
+            <td className="w-1/2 pl-4">
+              <p>  This is to list todos using SSH</p>
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
