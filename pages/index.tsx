@@ -100,23 +100,34 @@ const Home:React.FC = () => {
           <tr>
             <td className="w-1/2 pr-4">
               <Link href="/todos">
-               <b>Todo list without SSH</b>
+               <b>Todo list without SSR</b>
               </Link>
             </td>
             <td> : </td>
             <td className="w-1/2 pl-4">
-              <p> This is to list todos without using SSH</p>
+              <p> This is to list todos without using SSR</p>
             </td>
           </tr>
           <tr>
             <td className="w-1/2 pr-4">
               <Link href="/todos-ssh">
-               <b>Todo list with SSH</b>
+               <b>Todo list with SSR</b>
               </Link>
             </td>
             <td> : </td>
             <td className="w-1/2 pl-4">
-              <p>  This is to list todos using SSH</p>
+              <p>  This is to list todos using SSR</p>
+            </td>
+          </tr>
+          <tr>
+            <td className="w-1/2 pr-4">
+              <Link href="/metadata">
+               <b>Meta data</b>
+              </Link>
+            </td>
+            <td> : </td>
+            <td className="w-1/2 pl-4">
+              <p>  This page contains og meta data</p>
             </td>
           </tr>
         </tbody>
